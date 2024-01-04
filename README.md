@@ -42,7 +42,7 @@ Tagged snapshot of _root_, but keep maximum 10
 Hourly snapshot for one day, daily for one week, weekly for one month, and monthly for one year.
 
 ```bash
-# cat > /etc/cron.hourly/btrfs-snp <<EOF
+cat > /etc/cron.hourly/btrfs-snp <<EOF
 #!/bin/bash
 /usr/local/sbin/$BIN /home hourly  24 3600
 /usr/local/sbin/$BIN /home daily    7 86400
