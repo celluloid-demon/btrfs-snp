@@ -4,7 +4,7 @@ Create BTRFS snapshots, manually or from cron.
 
 ## Usage
 
-```
+```log
 # btrfs-snp
 Usage: btrfs-snp <dir> (<tag>) (<limit>) (<seconds>) (<destdir>)
 
@@ -21,19 +21,19 @@ Usage: btrfs-snp <dir> (<tag>) (<limit>) (<seconds>) (<destdir>)
 
 Snapshot of _home_
 
-```
+```bash
 # btrfs-snp /home
 ```
 
 Tagged snapshot of _root_
 
-```
+```bash
 # btrfs-snp / preupgrade
 ```
 
 Tagged snapshot of _root_, but keep maximum 10
 
-```
+```bash
 # btrfs-snp / preupgrade 10
 ```
 
@@ -41,7 +41,7 @@ Tagged snapshot of _root_, but keep maximum 10
 
 Hourly snapshot for one day, daily for one week, weekly for one month, and monthly for one year.
 
-```
+```bash
 # cat > /etc/cron.hourly/btrfs-snp <<EOF
 #!/bin/bash
 /usr/local/sbin/$BIN /home hourly  24 3600
