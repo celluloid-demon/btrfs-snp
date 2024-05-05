@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Exit on error
+set -e
+
+SCRIPT="$(readlink -f "$0")"
+SCRIPT_DIR="$(dirname "$SCRIPT")"
+
+BIN="$SCRIPT_DIR"
+
+# WARNING: TARGET DIRECTORY MUST BE A BTRFS SUBVOLUME
+
+# todo currently hard-coded to play nice with steamos-btrfs
+
+# subvol=@
+DIR="/home"
+
+"${BIN}/btrfs-snp" "$DIR" hourly 24 3600
+"${BIN}/btrfs-snp" "$DIR" daily   7 86400
+"${BIN}/btrfs-snp" "$DIR" weekly  4 604800
