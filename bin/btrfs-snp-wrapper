@@ -3,7 +3,9 @@
 # Exit on error
 set -e
 
-SCRIPT="$(readlink -f "$0")"
+# todo hard-coded for systemd timer testing
+# SCRIPT="$(readlink -f "$0")"
+SCRIPT="/home/deck/Applications/btrfs-snp/bin/btrfs-snp-wrapper"
 SCRIPT_DIR="$(dirname "$SCRIPT")"
 
 BIN="$SCRIPT_DIR"
