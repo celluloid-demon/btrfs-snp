@@ -1,5 +1,0 @@
-[Unit]
-Description="btrfs-snp-wrapper service unit file"
-
-[Service]
-ExecStart="/home/deck/Applications/btrfs-snp/bin/btrfs-snp-wrapper"
