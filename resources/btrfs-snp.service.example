@@ -1,5 +1,0 @@
-[Unit]
-Description="btrfs-snp-wrapper service unit file"
-
-[Service]
-ExecStart="/usr/local/bin/btrfs-snp-wrapper"
