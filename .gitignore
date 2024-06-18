@@ -83,7 +83,4 @@ $RECYCLE.BIN/
 #                          #
 ############################
 
-btrfs-snp.service
-btrfs-snp.timer
-
-btrfs-snp-wrapper
+working_folder/*

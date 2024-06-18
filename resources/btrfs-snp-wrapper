@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Exit on error
+set -eE
+
+BIN="/usr/local/bin"
+
+###################################
+#                                 #
+#          SAMPLE CONFIG          #
+#                                 #
+###################################
+
+# dir1="/home"
+
+# "${BIN}/btrfs-snp" "$dir1" hourly 24 3600
+# "${BIN}/btrfs-snp" "$dir1" daily   7 86400
+# "${BIN}/btrfs-snp" "$dir1" weekly  4 604800
+
+##############################################
+#                                            #
+#          BEGIN USER CONFIGURATION          #
+#                                            #
+##############################################
