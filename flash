@@ -59,7 +59,7 @@ fi
 
 if [ ! -f "${WORKING_FOLDER}/${EXEC}" ]; then
 
-    echo "break"
+    echo "foo"
 
     mkdir -p "${WORKING_FOLDER}"
     cp "${RESOURCES}/${EXEC}"* "${WORKING_FOLDER}/${EXEC}"
@@ -68,7 +68,7 @@ fi
 
 if [ ! -f "${WORKING_FOLDER}/${WRAPPER}" ]; then
 
-    echo "break"
+    echo "bar"
 
     mkdir -p "${WORKING_FOLDER}"
     cp "${RESOURCES}/${WRAPPER}"* "${WORKING_FOLDER}/${WRAPPER}"
