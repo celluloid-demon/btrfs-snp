@@ -41,12 +41,16 @@ echo "$OS" | grep -q steam && FLAG_os_is_steamos=1
 
 if [ ! -f "${WORKING_FOLDER}/${TIMER}" ]; then
 
+    echo "break"
+
     mkdir -p "${WORKING_FOLDER}"
     cp "${RESOURCES}/${TIMER}"* "${WORKING_FOLDER}/${TIMER}"
 
 fi
 
 if [ ! -f "${WORKING_FOLDER}/${SERVICE}" ]; then
+
+    echo "break"
 
     mkdir -p "${WORKING_FOLDER}"
     cp "${RESOURCES}/${SERVICE}"* "${WORKING_FOLDER}/${SERVICE}"
@@ -55,12 +59,16 @@ fi
 
 if [ ! -f "${WORKING_FOLDER}/${EXEC}" ]; then
 
+    echo "break"
+
     mkdir -p "${WORKING_FOLDER}"
     cp "${RESOURCES}/${EXEC}"* "${WORKING_FOLDER}/${EXEC}"
 
 fi
 
 if [ ! -f "${WORKING_FOLDER}/${WRAPPER}" ]; then
+
+    echo "break"
 
     mkdir -p "${WORKING_FOLDER}"
     cp "${RESOURCES}/${WRAPPER}"* "${WORKING_FOLDER}/${WRAPPER}"
